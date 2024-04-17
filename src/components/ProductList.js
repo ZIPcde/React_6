@@ -14,9 +14,9 @@ const ProductList = () => {
           <h2>{product.name}</h2>
           <p>{product.description}</p>
           <p>{product.price}</p>
-          <p>{product.available ? 'Available' : 'Not Available'}</p>
-          <button onClick={() => dispatch(deleteProduct(product.id))}>Delete</button>
-          <button onClick={() => dispatch(toggleProductAvailability(product.id))}>Toggle Availability</button>
+          <p>{product.available ? 'Доступен' : 'Недоступен'}</p>
+          <button onClick={() => dispatch(deleteProduct(product.id))}>Удалить</button>
+          <button onClick={() => dispatch(toggleProductAvailability(product.id))}>Изменить доступность</button>
         </li>
       ))}
     </ul>

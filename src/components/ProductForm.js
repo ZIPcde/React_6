@@ -21,11 +21,11 @@ const ProductForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Name" required />
-      <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Description" required />
-      <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} placeholder="Price" required />
-      <input type="checkbox" checked={available} onChange={(e) => setAvailable(e.target.checked)} /> Available
-      <button type="submit">Add Product</button>
+      <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Наименование продукта" required />
+      <input type="text" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Описание продукта" required />
+      <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} placeholder="Цена" required />
+      <input type="checkbox" checked={available} onChange={(e) => setAvailable(e.target.checked)} /> Доступность
+      <button type="submit">Добавить продукт</button>
     </form>
   );
 };
